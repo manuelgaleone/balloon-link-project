@@ -24,4 +24,11 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora temporibus, dicta nemo aliquam totam nisi deserunt soluta quas voluptatum ab beatae praesentium necessitatibus minus, facilis illum rerum officiis accusamus dolores!</p>
     </div>
 </div>
+
+<form method="POST" action="{{ route('shorten.store') }}">
+    @csrf
+    <label for="url">Inserisci l'URL da accorciare:</label>
+    <input type="text" name="url" id="url">
+    <button type="submit">Accorcia</button>
+</form>
 @endsection
